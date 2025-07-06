@@ -1,0 +1,29 @@
+{
+  "name": "@lightweight-clients/shikimori-graphql-lightweight-client-generator",
+  "scripts": {
+    "generate-client": "tsx ./src/generator.ts",
+    "format": "prettier --ignore-path .prettierignore --write ./src ./output",
+    "lint": "eslint .",
+    "depcheck": "depcheck --ignore-bin-package",
+    "prettify-everything": "npm run format && npm run lint && npm run depcheck",
+    "start": "npm run generate-client && npm run prettify-everything"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.30.1",
+    "@graphql-codegen/cli": "^5.0.7",
+    "@graphql-codegen/core": "^4.0.2",
+    "@graphql-codegen/plugin-helpers": "^5.1.1",
+    "@graphql-codegen/typescript": "^4.1.6",
+    "@types/node": "^24.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "depcheck": "^1.4.7",
+    "eslint": "^9.30.1",
+    "eta": "^3.5.0",
+    "graphql": "^16.11.0",
+    "prettier": "3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

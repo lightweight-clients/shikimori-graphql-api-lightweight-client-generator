@@ -1,0 +1,5 @@
+﻿{
+  "specification_url": "https://raw.githubusercontent.com/lightweight-clients/schemas/refs/heads/master/schemas/shikimori-graphql-api/graphql.json",
+  "temp_folder": "./.tmp",
+  "output_folder": "./output"
+}
