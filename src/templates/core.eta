@@ -2,7 +2,7 @@
 
 import type { QueryResultDescription } from './types-client';
 
-const BASE_URL: string = 'https://shikimori.one/api/graphql';
+const BASE_URL: string = 'https://shikimori.io/api/graphql';
 const headers: HeadersInit | undefined = { 'Content-Type': 'application/json' };
 
 const getResultFields = <TResultDescription>(resultDescription: QueryResultDescription<TResultDescription>): string => {
